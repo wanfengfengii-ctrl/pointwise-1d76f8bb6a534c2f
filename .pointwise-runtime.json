@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "kind": "cli",
+  "setup": [
+    ["python3", "-I", "-c", "import sys, zlib, hashlib; sys.path.insert(0, '/workspace'); import pack_import; print('dependency check ok')"]
+  ],
+  "verify": [
+    "python3",
+    "-I",
+    "/workspace/scripts/verify.py"
+  ],
+  "demo": [
+    "python3",
+    "-I",
+    "/workspace/scripts/demo.py"
+  ]
+}
